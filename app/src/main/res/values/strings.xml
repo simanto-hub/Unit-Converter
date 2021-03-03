@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="currency">Currency</string>
+    <string name="weight">Weight</string>
+    <string name="time">Time</string>
+    <string name="length">Length</string>
+    <string name="area">Area</string>
+    <string name="temperature">Temperature</string>
+    <string name="type_unit">Type Unit</string>
+    <string name="answer">Answer</string>
+    <string name="convert">Convert</string>
+    <string name="to">To</string>
+    <string name="exit_title">Exit</string>
+    <string name="exit_message">Do you want to exit?</string>
+
+    <string-array name="currency_name">
+        <item>Select Unit</item>
+        <item>U.S. Dollar(USD)</item>
+        <item>Euro(EUR)</item>
+        <item>Pound(GBP)</item>
+        <item>Japanese-Yen(JPY)</item>
+        <item>CanadianDollar(CAD)</item>
+        <item>Bangladesh(TAKA)</item>
+    </string-array>
+
+    <string-array name="weight_name">
+        <item>Select Unit</item>
+        <item>Kilogram(kg)</item>
+        <item>Gram(gm)</item>
+    </string-array>
+
+    <string-array name="time_name">
+        <item>Select Unit</item>
+        <item>Hour</item>
+        <item>Minute</item>
+    </string-array>
+
+    <string-array name="length_name">
+        <item>Select Unit</item>
+        <item>Meter</item>
+        <item>Centimeter</item>
+    </string-array>
+
+    <string-array name="area_name">
+        <item>Select Area Unit</item>
+        <item>Square Kilometer</item>
+        <item>Acre</item>
+    </string-array>
+
+    <string-array name="temperature_name">
+        <item>Select Unit</item>
+        <item>Celsius</item>
+        <item>Farenheit</item>
+    </string-array>
+
+
+</resources>

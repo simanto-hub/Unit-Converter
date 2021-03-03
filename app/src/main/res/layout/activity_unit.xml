@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00233E"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/unitTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="180dp"
+        app:cardCornerRadius="30dp"
+        app:cardMaxElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/red_exit_button"/>
+
+        </LinearLayout>
+
+
+        <!--Parent LinaerLayout-->
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_margin="45dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/answerTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/answer"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="2dp"/>
+
+
+            <!--Spinner & To LinaerLayout-->
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/unitOneSP"
+                    android:backgroundTint="@color/black"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    style="#00233E"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textSize="35dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/unitTwoSP"
+                    style="#00233E"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            <!--Type Unit & Convert LinaerLayout-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/typeUnitEV"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/type_unit"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/convertBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="@string/convert"
+                    android:textSize="20dp"
+                    android:layout_margin="15dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:background="#00233E"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
